@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Canard jaune",
+        "picture": "canard-jaune.png",
+        "price": 11.95
+    },
+    {
+        "id": 6,
+        "name": "Canard Geek",
+        "picture": "canard-geek.png",
+        "price": 19.95
+    },
+    {
+        "id": 12,
+        "name": "Canard Dragon",
+        "picture": "canard-dragon.png",
+        "price": 19.95
+    },
+    {
+        "id": 24,
+        "name": "Duck Vador",
+        "picture": "canard-vador.png",
+        "price": 12
+    },
+    {
+        "id": 26,
+        "name": "Canard Licorne",
+        "picture": "canard-licorne.png",
+        "price": 19.95
+    },
+    {
+        "id": 28,
+        "name": "Canard en Or",
+        "picture": "canard-en-or.png",
+        "price": 14.95
+    },
+    {
+        "id": 29,
+        "name": "Canard Pirate",
+        "picture": "canard-pirate.png",
+        "price": 12
+    },
+    {
+        "id": 31,
+        "name": "Surfeuse",
+        "picture": "canard-surfeuse.png",
+        "price": 13.95
+    },
+    {
+        "id": 32,
+        "name": "Ziggy StarDuck",
+        "picture": "canard-bowie.png",
+        "price": 19.95
+    },
+    {
+        "id": 34,
+        "name": "Rosie the Riveter",
+        "picture": "canard-rosie.png",
+        "price": 12
+    }
+]
