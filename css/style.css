@@ -288,6 +288,18 @@ body {
     cursor: pointer;
 }
 
+.pictures-handler--var {
+    position: absolute;
+    /* bottom: calc(50% - 1.5rem); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    aspect-ratio: 1/1;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
 .pictures-prev {
     left: 1rem;
 }

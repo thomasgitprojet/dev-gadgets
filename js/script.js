@@ -2,9 +2,25 @@ const btnPrev = document.querySelector(".js-btn-prev");
 
 const btnNext = document.querySelector(".js-btn-next");
 
-const showImg = document.querySelector(".js-show-img");
+let showImg = document.querySelector(".js-show-img");
 
-document.querySelectorAll(".js-img");
+const arrayImg = document.querySelectorAll(".js-img");
+console.log(arrayImg);
+
+
+
+// function showPrevImg (arrayImg) {
+//     btnPrev.addEventListener("click", function () {
+//         const element = (arrayImg[arrayImg.length - 1]);
+//         console.log(element.getAttribute("src"));
+//         showImg.src = element.getAttribute("src");
+//         arrayImg.push(showImg)
+// })
+// }
+
+
+// showPrevImg(arrayImg)
+////////////////////////////////////////
 
 btnPrev.addEventListener("click", function () {
 

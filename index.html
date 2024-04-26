@@ -24,12 +24,12 @@
         </div>
     </header>
     <main class="page">
-        <h1 class="page-ttl">Canard jaune pour la revue de code</h1>
-        <section class="page-pics">
+        <h1 id="liste de canards" class="page-ttl">Canard jaune pour la revue de code</h1>
+        <section class="page-pics" aria-labelledby="liste de canards">
             <div class="pictures">
-                <button type="button" class="pictures-handler pictures-prev js-btn-prev">◀️</button>
+                <button aria-label="bouton image précédente" type="button" class="pictures-handler pictures-prev js-btn-prev">◀️</button>
                 <img class="pictures-img js-show-img" src="img/canard-jaune-1-l.png" alt="canard jaune pour dévloppeur">
-                <button type="button" class="pictures-handler pictures-next js-btn-next">▶️</button>
+                <button aria-label="bouton image suivante" type="button" class="pictures-handler pictures-next js-btn-next">▶️</button>
                 <ul class="thumbs js-ul">
                     <li class="thumbs-itm">
                         <img class="thumbs-img js-img" id="duck-s-1" src="img/canard-jaune-1-s.png" alt="canard">
@@ -56,11 +56,11 @@
                 <button class="add-cta js-btn-add" type="button">Ajouter au panier</button>
             </div>
         </section>
-        <section class="page-txt page-section">
+        <section class="page-txt page-section" aria-label="texte de présentation du produit">
             <p class="product-descr">Ce canard va devenir votre meilleur allié pour le développement de vos projets les plus ambitieux ! Fidèle compagnon qui trônera à côté de vos écrans, vous pourrez lui expliquer les problèmes que vous rencontrez avec votre code : refactoring, bugs, algo complexe, … Ce nouveau collègue discret et joyeux vous aidera à trouver les solutions à toutes vos problématiques !</p>
             <div>
                 <h2 class="product-subttl product-acrd-lnk js-tlt-avantages">Avantages</h2>
-                <ul class="product-advantages js-ul-avantages">
+                <ul class="product-advantages js-ul-avantages" aria-label="lst avantages">
                     <li>Un nouveau compagnon de pair programming</li>
                     <li>Repoussez les limites de votre code</li>
                     <li>Un collègue utile, joyeux et discret</li>
@@ -85,38 +85,42 @@
                 </dl>
             </div>
         </section>
-        <section class="similar page-section">
-            <h2 class="product-subttl">Articles similaires</h2>
-            <ul class="similar-lst">
-                <li class="similar-itm">
-                    <a class="similar-lnk" href="#">
-                        <img class="similar-img" src="img/canard-dragon.png" alt="canard dragon">
-                        <h3 class="similar-ttl">Canard Dragon</h3>
-                        <div class="similar-price">19€95</div>
-                    </a>
-                </li>
-                <li class="similar-itm">
-                    <a class="similar-lnk" href="#">
-                        <img class="similar-img" src="img/canard-geek.png" alt="canard geek">
-                        <h3 class="similar-ttl">Canard Geek</h3>
-                        <div class="similar-price">19€95</div>
-                    </a>
-                </li>
-                <li class="similar-itm">
-                    <a class="similar-lnk" href="#">
-                        <img class="similar-img" src="img/canard-licorne.png" alt="canard licorne">
-                        <h3 class="similar-ttl">Canard Licorne</h3>
-                        <div class="similar-price">19€95</div>
-                    </a>
-                </li>
-                <li class="similar-itm">
-                    <a class="similar-lnk" href="#">
-                        <img class="similar-img" src="img/canard-bowie.png" alt="canard David Bowie">
-                        <h3 class="similar-ttl">Ziggy StarDuck</h3>
-                        <div class="similar-price">19€95</div>
-                    </a>
-                </li>
-            </ul>
+        <section class="similar page-section" aria-labelledby="articles similaires">
+            <h2 class="product-subttl" id="articles similaires">Articles similaires</h2>
+            <div>
+                <button type="button" class="pictures-handler--var pictures-prev">◀️</button>
+                <ul class="similar-lst">
+                    <li class="similar-itm">
+                        <a class="similar-lnk" href="#">
+                            <img class="similar-img" src="img/canard-dragon.png" alt="canard dragon">
+                            <h3 class="similar-ttl">Canard Dragon</h3>
+                            <div class="similar-price">19€95</div>
+                        </a>
+                    </li>
+                    <li class="similar-itm">
+                        <a class="similar-lnk" href="#">
+                            <img class="similar-img" src="img/canard-geek.png" alt="canard geek">
+                            <h3 class="similar-ttl">Canard Geek</h3>
+                            <div class="similar-price">19€95</div>
+                        </a>
+                    </li>
+                    <li class="similar-itm">
+                        <a class="similar-lnk" href="#">
+                            <img class="similar-img" src="img/canard-licorne.png" alt="canard licorne">
+                            <h3 class="similar-ttl">Canard Licorne</h3>
+                            <div class="similar-price">19€95</div>
+                        </a>
+                    </li>
+                    <li class="similar-itm">
+                        <a class="similar-lnk" href="#">
+                            <img class="similar-img" src="img/canard-bowie.png" alt="canard David Bowie">
+                            <h3 class="similar-ttl">Ziggy StarDuck</h3>
+                            <div class="similar-price">19€95</div>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" class="pictures-handler--var pictures-next">▶️</button>
+            </div>
         </section>
     </main>
     <aside class="reinsur">
