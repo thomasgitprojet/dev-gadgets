@@ -9,18 +9,6 @@ const showImg = document.querySelector(".js-show-img");
 document.querySelectorAll(".js-img");
 console.log(document.querySelectorAll(".js-img"));
 
-// let arrayImg = []
-
-// for (const img of document.querySelectorAll(".js-img")) {
-//     arrayImg.push(img)
-// }
-
-// function selectPrevImg (img) {
-//     if(img.src === "img/canard-jaune-1-l.png") {
-//         img.src = "img/canard-jaune-5-l.png"
-//     }
-// }
-
 btnPrev.addEventListener("click", function () {
 
     showImg.classList.toggle("prev")
@@ -84,3 +72,20 @@ btnNext.addEventListener("click", function () {
         showImg.classList.toggle("next")
     }
 })
+
+function selectedImgAtOver (src) {  
+    console.log(src.replace("-s.png", "-l.png"));
+    showImg.src = src.replace("-s.png", "-l.png")
+}
+
+const smallsImgs = document.querySelectorAll(".js-img");
+console.log(smallsImgs);
+
+for (const img of smallsImgs) {
+    console.log(img);
+    img.addEventListener("mouseover", function (event) {
+        let srcImg = img.src
+        selectedImgAtOver(srcImg)
+    })
+}
+
