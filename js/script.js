@@ -107,3 +107,29 @@ btnAddArticle.addEventListener("click", function(event) {
     }
 })
 
+
+
+const tltAvantages = document.querySelector(".js-tlt-avantages");
+
+const ulAvantages = document.querySelector(".js-ul-avantages");
+
+
+tltAvantages.addEventListener("click", function(event){
+    ulAvantages.classList.toggle("hidden");
+    tltAvantages.classList.toggle("closed");
+    localStorage.setItem("class", tltAvantages.classList.contains("closed"))
+
+    console.log(localStorage);
+})
+
+const tltCaracts = document.querySelector(".js-tlt-caracts");
+
+const dlCaracts = document.querySelector(".js-dl-caracts");
+console.log(dlCaracts);
+
+tltCaracts.addEventListener("click", function(event){
+    dlCaracts.classList.toggle("hidden");
+    tltCaracts.classList.toggle("closed");
+})
+
+
